@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALWAHA SCHOOL</title>
+    <link rel="stylesheet" href="/css/dropdown.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<body>
+   <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="#"><h2>ALWAHA <span> SCHOOL </span></h2>
+          </a>
+        </div>
+        <input  class="search" type="search" placeholder="search">
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="main.html">HOME</a></li>
+          <li><a href="#">PRIMARY</a></li>
+          <li><a href="#">PREPARATORY</a></li>
+          <li><a href="#">DUAL</a></li>
+          <li><a href="main.html">ALL</a></li>
+          
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="banner"></div>
+    <div class="about">
+  </div>
+  </div>
+    
+  <div class="textss">
+    <h4>HELLO STUDENTS IN</h4>
+    <h2>ALWAHA <span>SCHOOLS</span></h2>
+    <h3>The martyr Muhammad Mahmoud Abu Saree</h3>
+  </div>
+  <div class="body5">
+  <a href="main.html"><button>
+    LET`s To Learn
+    <span class="first"></span>
+    <span class="secound"></span>
+    <span class="third"></span>
+    <span class="foutth"></span>
+  </button></a>
+    
+  
+   </div>
+   <div id="particles-js"></div>
+  <script type="text/javascript1" src="particles.js"></script>
+  <script type="text/javascript1" src="app.js"></script>
+
+
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", function() {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+   </script>
+ 
+ 
+ 
+ <!-- custom js file link  -->
+ <script src="dropdown.js"></script>
+ 
+ <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+ </body>
+ </html>

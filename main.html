@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALWAHA SCHOOL</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <a href="#"><h2>ALWAHA <span> SCHOOL </span></h2>
+            </a>
+          </div>
+          <input  class="search" type="search" placeholder="search">
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">PRIMARY</a></li>
+            <li><a href="#">PREPARATORY</a></li>
+            <li><a href="#">DUAL</a></li>
+            <li><a href="main.html">ALL</a></li>
+            
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="banner"></div>
+      <div class="about">
+    </div>
+    </div>
+
+    <section class="section1">
+        <div class="context">
+            <h2>PREPARATORY {PREP:2}:</h2>
+        
+        </div>
+        </section>
+        <section class="backtotop"> 
+
+        </section>
+        <div class="body">
+            <div class="dropdown">
+                  <div class="select">
+                     <span class="selected">PREP</span>
+                     <div class="caret"></div>
+                  </div>
+                  <ul class="menu">
+                     <li><a href="Arabic.html">PREP1</a></li>
+                     <li><a href="soctial.html">PREP2</a></li>
+                     <li><a href="science.html">PREP3</a></li>
+                  </ul>
+                </div>
+                </div>   
+        <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+        <section class="section2">
+            <div class="text">
+             <h2> <span> Catogary</span> Alwaha <span>School</span></h2>    
+            </div>
+            <div class="imge">
+                <a href="Arabic.html"><img class="allelah" title="ARABIC PREP2" src="/img/Untitled-2.png"></a>
+                <a href="soctial.html"><img title="SOCIAL PREP2" class="allelah" src="/img/Untitled-1.png" title="Athena"></a>
+                <a href="science.html"><img class="allelah" title="SCIENCE PREP2" src="/img/New Project (4).png"></a>
+                <a href="math.html"><img class="allelah" src="/img/istockphoto-626056624-612x612.jpg" title="MATHS"></a>
+                <a href="english.html"><img class="allelah" src="/img/New Project (3).png" title="ENGLISH"></a>
+        </section>
+       <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+       </script>
+
+        <!-- custom js file link  -->
+ <script src="dropdown.js"></script>
+
+ <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>
